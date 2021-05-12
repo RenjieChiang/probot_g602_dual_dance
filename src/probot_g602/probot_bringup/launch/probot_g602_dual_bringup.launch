@@ -1,0 +1,52 @@
+<launch>
+    <arg name="sim"      default="true" />
+<!--    <arg name="robot_ip" default="192.168.2.123"/>-->
+
+    <group if="$(arg sim)">
+        <arg name="ns" default="g602" doc="namespace as a group"/>
+
+        <group ns="$(arg ns)_1">
+            <remap from="/tf" to="$(arg ns)_1/tf" />
+            <remap from="/tf_static" to="$(arg ns)_1/tf_static" />
+            <include file="$(find probot_bringup)/launch/dual_ns_config.launch">
+                <arg name="ns" value="$(arg ns)_1" />
+                <arg name="sim" value="true" />
+            </include>
+        </group>
+
+        <group ns="$(arg ns)_2">
+            <remap from="/tf" to="$(arg ns)_2/tf" />
+            <remap from="/tf_static" to="$(arg ns)_2/tf_static" />
+            <include file="$(find probot_bringup)/launch/dual_ns_config.launch">
+                <arg name="ns" value="$(arg ns)_2" />
+                <arg name="sim" value="true" />
+            </include>
+        </group>
+    </group>
+
+    <group unless="$(arg sim)">
+        <arg name="ns" default="g602" doc="namespace as a group"/>
+        <param name="g602_1/robot_ip_address" value="192.168.3.123"/>
+        <param name="g602_2/robot_ip_address" value="192.168.2.123"/>
+        <group ns="$(arg ns)_1">
+            <remap from="/tf" to="$(arg ns)_1/tf" />
+            <remap from="/tf_static" to="$(arg ns)_1/tf_static" />
+            <include file="$(find probot_bringup)/launch/dual_ns_config.launch">
+                <arg name="ns" value="$(arg ns)_1" />
+                <arg name="sim" value="false" />
+            </include>
+        </group>
+
+        <group ns="$(arg ns)_2">
+            <remap from="/tf" to="$(arg ns)_2/tf" />
+            <remap from="/tf_static" to="$(arg ns)_2/tf_static" />
+            <include file="$(find probot_bringup)/launch/dual_ns_config.launch">
+                <arg name="ns" value="$(arg ns)_2" />
+                <arg name="sim" value="false" />
+            </include>
+        </group>
+    </group>
+
+
+
+</launch>

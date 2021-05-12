@@ -1,0 +1,8 @@
+prefix=/home/tianbot/probot_g602_ws/devel
+
+Name: probot_description
+Description: Description of probot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/tianbot/probot_g602_ws/devel
+
+Name: probot_g602_ikfast_manipulator_plugin
+Description: Description of probot_g602_ikfast_manipulator_plugin
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

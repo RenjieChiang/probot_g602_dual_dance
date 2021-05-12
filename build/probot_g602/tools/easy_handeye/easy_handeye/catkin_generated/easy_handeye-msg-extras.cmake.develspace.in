@@ -1,0 +1,2 @@
+set(easy_handeye_MESSAGE_FILES "/home/tianbot/probot_g602_ws/src/probot_g602/tools/easy_handeye/easy_handeye/msg/HandeyeCalibration.msg;/home/tianbot/probot_g602_ws/src/probot_g602/tools/easy_handeye/easy_handeye/msg/SampleList.msg")
+set(easy_handeye_SERVICE_FILES "/home/tianbot/probot_g602_ws/src/probot_g602/tools/easy_handeye/easy_handeye/srv/ComputeCalibration.srv;/home/tianbot/probot_g602_ws/src/probot_g602/tools/easy_handeye/easy_handeye/srv/RemoveSample.srv;/home/tianbot/probot_g602_ws/src/probot_g602/tools/easy_handeye/easy_handeye/srv/TakeSample.srv")

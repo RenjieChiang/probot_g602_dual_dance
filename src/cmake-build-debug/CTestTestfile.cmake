@@ -1,0 +1,37 @@
+# CMake generated Testfile for 
+# Source directory: /home/tianbot/probot_g602_ws/src
+# Build directory: /home/tianbot/probot_g602_ws/src/cmake-build-debug
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs("gtest")
+subdirs("probot_g602/probot_bringup")
+subdirs("probot_g602/probot_driver")
+subdirs("probot_g602/probot_g602_moveit_config")
+subdirs("probot_g602/tools/robotiq_85_gripper/robotiq_85_driver")
+subdirs("probot_g602/tools/robotiq_85_gripper/robotiq_85_simulation/robotiq_85_gazebo")
+subdirs("probot_g602/tools/robotiq_85_gripper/robotiq_85_gripper")
+subdirs("probot_g602/tools/robotiq_85_gripper/robotiq_85_simulation/robotiq_85_simulation")
+subdirs("probot_g602/tools/easy_handeye/rqt_easy_handeye")
+subdirs("probot_g602/tools/aruco_ros/aruco_msgs")
+subdirs("probot_g602/probot_msgs")
+subdirs("probot_g602/probot_blockly")
+subdirs("probot_g602/tools/robotiq_85_gripper/robotiq_85_bringup")
+subdirs("probot_g602/tools/robotiq_85_gripper/robotiq_85_description")
+subdirs("probot_g602/tools/robotiq_85_gripper/robotiq_85_msgs")
+subdirs("probot_g602/tools/robotiq_85_gripper/si_utils")
+subdirs("probot_g602/tools/aruco_ros/aruco")
+subdirs("probot_g602/probot_vision/object_color_detector")
+subdirs("probot_g602/tools/aruco_ros/aruco_ros")
+subdirs("probot_g602/tools/gazebo-pkgs/gazebo_version_helpers")
+subdirs("probot_g602/tools/gazebo-pkgs/gazebo_grasp_plugin")
+subdirs("probot_g602/tools/gazebo-pkgs/gazebo_world_plugin_loader")
+subdirs("probot_g602/tools/robotiq_85_gripper/robotiq_85_simulation/roboticsgroup_gazebo_plugins")
+subdirs("probot_g602/tools/easy_handeye/easy_handeye")
+subdirs("probot_g602/probot_vision/handeye_simulation")
+subdirs("probot_g602/probot_description")
+subdirs("probot_g602/probot_g602_demo")
+subdirs("probot_g602/probot_g602_ikfast_manipulator_plugin")
+subdirs("probot_g602/probot_vision/probot_grasping")
+subdirs("probot_g602/probot_rviz_plugin")
+subdirs("probot_g602/tools/robotiq_85_gripper/robotiq_85_moveit_config")

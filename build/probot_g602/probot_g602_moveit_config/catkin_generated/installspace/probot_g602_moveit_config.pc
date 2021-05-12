@@ -1,0 +1,8 @@
+prefix=/home/tianbot/probot_g602_ws/install
+
+Name: probot_g602_moveit_config
+Description: Description of probot_g602_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

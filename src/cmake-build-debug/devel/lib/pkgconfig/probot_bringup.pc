@@ -1,0 +1,8 @@
+prefix=/home/tianbot/probot_g602_ws/src/cmake-build-debug/devel
+
+Name: probot_bringup
+Description: Description of probot_bringup
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

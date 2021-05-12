@@ -1,0 +1,9 @@
+<launch>
+    <arg name="ns" default="g602" />
+    <arg name="sim" default="false" />
+
+    <include file="$(find probot_bringup)/launch/probot_g602_bringup.launch">
+        <arg name="sim" value="$(arg sim)"/>
+        <arg name="ns" value="$(arg ns)"/>
+    </include>
+</launch>

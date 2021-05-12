@@ -1,0 +1,2 @@
+bool ready2next
+uint8 dance_group_number

@@ -1,0 +1,8 @@
+prefix=/home/tianbot/probot_g602_ws/install
+
+Name: handeye_simulation
+Description: Description of handeye_simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
