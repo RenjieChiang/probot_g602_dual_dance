@@ -147,6 +147,8 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
 
             case 5:
             {
+                arm.setMaxAccelerationScalingFactor(0.2);
+                arm.setMaxVelocityScalingFactor(0.2);
                 std::vector<double> joint_group_positions5 = {-46./180*3.14, -72./180*3.14, 48./180*3.14, 27./180*3.14, 98./180*3.14, 50./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions5);
@@ -160,6 +162,8 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
 
             case 6:
             {
+                arm.setMaxAccelerationScalingFactor(0.5);
+                arm.setMaxVelocityScalingFactor(0.5);
                 std::vector<double> joint_group_positions6 = {-45./180*3.14, -72./180*3.14, 101./180*3.14, 67./180*3.14, 27./180*3.14, 80./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions6);
@@ -186,7 +190,9 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
 
             case 8:
             {
-                std::vector<double> joint_group_positions8 = {0./180*3.14, -29./180*3.14, 29./180*3.14, -90./180*3.14, 90./180*3.14, -150./180*3.14};
+                arm.setMaxAccelerationScalingFactor(0.3);
+                arm.setMaxVelocityScalingFactor(0.3);
+                std::vector<double> joint_group_positions8 = {0./180*3.14, -29./180*3.14, 29./180*3.14, 0./180*3.14, 90./180*3.14, -150./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions8);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_8;
