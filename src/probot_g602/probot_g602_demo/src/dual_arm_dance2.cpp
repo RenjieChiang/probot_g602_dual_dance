@@ -105,7 +105,7 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
             {
                 arm.setMaxAccelerationScalingFactor(0.3);
                 arm.setMaxVelocityScalingFactor(0.3);
-                std::vector<double> joint_group_positions2 = {-20./180*3.14, 20./180*3.14, 50./180*3.14, 0./180*3.14, 110./180*3.14, 0./180*3.14};
+                std::vector<double> joint_group_positions2 = {-20./180*3.14, 20./180*3.14, 50./180*3.14, 0./180*3.14, 110./180*3.14, 20./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions2);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_2;
@@ -119,7 +119,7 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
             {
                 arm.setMaxAccelerationScalingFactor(0.3);
                 arm.setMaxVelocityScalingFactor(0.3);
-                std::vector<double> joint_group_positions3 = {0./180*3.14, 0./180*3.14, 90./180*3.14, 0./180*3.14, 90./180*3.14, 0./180*3.14};
+                std::vector<double> joint_group_positions3 = {0./180*3.14, 0./180*3.14, 90./180*3.14, 0./180*3.14, 90./180*3.14, 40./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions3);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_3;
@@ -134,7 +134,7 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
             {
                 arm.setMaxAccelerationScalingFactor(0.5);
                 arm.setMaxVelocityScalingFactor(0.5);
-                std::vector<double> joint_group_positions4 = {-42./180*3.14, 33./180*3.14, -22./180*3.14, 70./180*3.14, 35./180*3.14, -40./180*3.14};
+                std::vector<double> joint_group_positions4 = {-42./180*3.14, 33./180*3.14, -22./180*3.14, 110./180*3.14, 35./180*3.14, 20./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions4);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_4;
@@ -147,7 +147,7 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
 
             case 5:
             {
-                std::vector<double> joint_group_positions5 = {-46./180*3.14, -79./180*3.14, 48./180*3.14, 27./180*3.14, 98./180*3.14, 99./180*3.14};
+                std::vector<double> joint_group_positions5 = {-46./180*3.14, -72./180*3.14, 48./180*3.14, 27./180*3.14, 98./180*3.14, 50./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions5);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_5;
@@ -160,7 +160,7 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
 
             case 6:
             {
-                std::vector<double> joint_group_positions6 = {-45./180*3.14, -79./180*3.14, 101./180*3.14, 67./180*3.14, 27./180*3.14, 216./180*3.14};
+                std::vector<double> joint_group_positions6 = {-45./180*3.14, -72./180*3.14, 101./180*3.14, 67./180*3.14, 27./180*3.14, 80./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions6);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_6;
@@ -173,7 +173,7 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
 
             case 7:
             {
-                std::vector<double> joint_group_positions7 = {-23./180*3.14, -44./180*3.14, 21./180*3.14, 127./180*3.14, 25./180*3.14, 47./180*3.14};
+                std::vector<double> joint_group_positions7 = {-23./180*3.14, -44./180*3.14, 21./180*3.14, 127./180*3.14, 65./180*3.14, 30./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions7);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_7;
@@ -186,7 +186,7 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
 
             case 8:
             {
-                std::vector<double> joint_group_positions8 = {0./180*3.14, -29./180*3.14, 29./180*3.14, -90./180*3.14, 90./180*3.14, -213./180*3.14};
+                std::vector<double> joint_group_positions8 = {0./180*3.14, -29./180*3.14, 29./180*3.14, -90./180*3.14, 90./180*3.14, -150./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions8);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_8;
@@ -292,7 +292,7 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
             {
                 arm.setMaxAccelerationScalingFactor(0.8);
                 arm.setMaxVelocityScalingFactor(0.8);
-                std::vector<double> joint_group_positions12 = {60./180*3.14, -35./180*3.14, -10./180*3.14, 65./180*3.14, 160./180*3.14, 10./180*3.14};
+                std::vector<double> joint_group_positions12 = {60./180*3.14, -35./180*3.14, -10./180*3.14, 65./180*3.14, 160./180*3.14, 0./180*3.14};
                 ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
                 arm.setJointValueTarget(joint_group_positions12);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_12;
@@ -359,7 +359,27 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_16;
                 arm.plan(my_plan_follower1_16);
                 arm.execute(my_plan_follower1_16);
-                ROS_INFO("Move  group # %d complete !!!!!", msg->dance_group_number);
+                ROS_INFO("Move  group # %d complete !!!!! #1", msg->dance_group_number);
+                std::vector<double> joint_group_positions16_1 = {-60./180*3.14, 20./180*3.14, 10./180*3.14, -100./180*3.14, 150./180*3.14, -90./180*3.14};
+                arm.setJointValueTarget(joint_group_positions16_1);
+                arm.plan(my_plan_follower1_16);
+                arm.execute(my_plan_follower1_16);
+
+//                ROS_INFO("Move  group # %d complete !!!!! #2", msg->dance_group_number);
+//                std::vector<double> joint_group_positions16_2 = {-60./180*3.14, -35./180*3.14, -10./180*3.14, -65./180*3.14, 160./180*3.14, 10./180*3.14};
+//                arm.setJointValueTarget(joint_group_positions16_2);
+//                arm.plan(my_plan_follower1_16);
+//                arm.execute(my_plan_follower1_16);
+//                ROS_INFO("Move  group # %d complete !!!!! #3", msg->dance_group_number);
+//                std::vector<double> joint_group_positions16_3 = {60./180*3.14, -35./180*3.14, -10./180*3.14, 65./180*3.14, 160./180*3.14, 10./180*3.14};
+//                arm.setJointValueTarget(joint_group_positions16_3);
+//                arm.plan(my_plan_follower1_16);
+//                arm.execute(my_plan_follower1_16);
+//                ROS_INFO("Move  group # %d complete !!!!! #4", msg->dance_group_number);
+//                arm.setJointValueTarget(joint_group_positions16);
+//                arm.plan(my_plan_follower1_16);
+//                arm.execute(my_plan_follower1_16);
+//                ROS_INFO("Move  group # %d complete !!!!!", msg->dance_group_number);
 //                sleep(1);
                 break;
             }
@@ -368,10 +388,19 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
             {
                 arm.setMaxAccelerationScalingFactor(0.8);
                 arm.setMaxVelocityScalingFactor(0.8);
-                std::vector<double> joint_group_positions17 = {0./180*3.14, 30./180*3.14, 10./180*3.14, 0./180*3.14, 45./180*3.14, 0./180*3.14};
-                ROS_INFO("Follower 1 ready to MOVE!! %d", msg->dance_group_number);
-                arm.setJointValueTarget(joint_group_positions17);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_17;
+                std::vector<double> joint_group_positions16_2 = {-60./180*3.14, -35./180*3.14, -10./180*3.14, -65./180*3.14, 160./180*3.14, 10./180*3.14};
+                arm.setJointValueTarget(joint_group_positions16_2);
+                arm.plan(my_plan_follower1_17);
+                arm.execute(my_plan_follower1_17);
+                ROS_INFO("Move  group # %d complete !!!!! #3", msg->dance_group_number);
+                std::vector<double> joint_group_positions16_3 = {60./180*3.14, -35./180*3.14, -10./180*3.14, 65./180*3.14, 160./180*3.14, 10./180*3.14};
+                arm.setJointValueTarget(joint_group_positions16_3);
+                arm.plan(my_plan_follower1_17);
+                arm.execute(my_plan_follower1_17);
+                ROS_INFO("Move  group # %d complete !!!!! #4", msg->dance_group_number);
+                std::vector<double> joint_group_positions17 = {0./180*3.14, 0./180*3.14, 90./180*3.14, 0./180*3.14, 90./180*3.14, 0./180*3.14};
+                arm.setJointValueTarget(joint_group_positions17);
                 arm.plan(my_plan_follower1_17);
                 arm.execute(my_plan_follower1_17);
                 ROS_INFO("Move  group # %d complete !!!!!", msg->dance_group_number);
@@ -385,26 +414,26 @@ void Follower::FollowerCallback(const probot_g602_demo::leader_control::ConstPtr
                 arm.setMaxVelocityScalingFactor(0.8);
                 moveit::planning_interface::MoveGroupInterface::Plan my_plan_follower1_18;
                 for (int i = 0; i < 1; ++i) {
-                    std::vector<double> joint_group_positions18 = {30./180*3.14, 30./180*3.14, -6./180*3.14, -80./180*3.14, 15./180*3.14, 60./180*3.14};
-                    arm.setJointValueTarget(joint_group_positions18);
-
-                    arm.plan(my_plan_follower1_18);
-                    arm.execute(my_plan_follower1_18);
-                    std::vector<double> joint_group_positions18_1 = {0./180*3.14, 38./180*3.14, -6./180*3.14, 0./180*3.14, 50./180*3.14, 0./180*3.14};
-                    arm.setJointValueTarget(joint_group_positions18_1);
-                    arm.plan(my_plan_follower1_18);
-                    arm.execute(my_plan_follower1_18);
-                    arm.setJointValueTarget(joint_group_positions18);
-                    arm.plan(my_plan_follower1_18);
-                    arm.execute(my_plan_follower1_18);
+//                    std::vector<double> joint_group_positions18 = {30./180*3.14, 30./180*3.14, -6./180*3.14, -80./180*3.14, 15./180*3.14, 60./180*3.14};
+//                    arm.setJointValueTarget(joint_group_positions18);
+//
+//                    arm.plan(my_plan_follower1_18);
+//                    arm.execute(my_plan_follower1_18);
+//                    std::vector<double> joint_group_positions18_1 = {0./180*3.14, 38./180*3.14, -6./180*3.14, 0./180*3.14, 50./180*3.14, 0./180*3.14};
+//                    arm.setJointValueTarget(joint_group_positions18_1);
+//                    arm.plan(my_plan_follower1_18);
+//                    arm.execute(my_plan_follower1_18);
+//                    arm.setJointValueTarget(joint_group_positions18);
+//                    arm.plan(my_plan_follower1_18);
+//                    arm.execute(my_plan_follower1_18);
 
                     std::vector<double> joint_group_positions18_2 = {-35./180*3.14, 25./180*3.14, -3./180*3.14, 80./180*3.14, 7./180*3.14, -60./180*3.14};
                     arm.setJointValueTarget(joint_group_positions18_2);
-                    arm.plan(my_plan_follower1_18);
-                    arm.execute(my_plan_follower1_18);
-                    arm.setJointValueTarget(joint_group_positions18_1);
-                    arm.plan(my_plan_follower1_18);
-                    arm.execute(my_plan_follower1_18);
+//                    arm.plan(my_plan_follower1_18);
+//                    arm.execute(my_plan_follower1_18);
+//                    arm.setJointValueTarget(joint_group_positions18_1);
+//                    arm.plan(my_plan_follower1_18);
+//                    arm.execute(my_plan_follower1_18);
                     arm.setJointValueTarget(joint_group_positions18_2);
                     arm.plan(my_plan_follower1_18);
                     arm.execute(my_plan_follower1_18);

@@ -100,7 +100,7 @@ int main(int argc, char **argv) {
     my_control_msg2.ready2next = true;
     Leader_control.publish(my_control_msg2);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
-    std::vector<double> joint_group_positions2 = {-20./180*3.14, 20./180*3.14, 50./180*3.14, 0./180*3.14, 110./180*3.14, 0./180*3.14};
+    std::vector<double> joint_group_positions2 = {-20./180*3.14, 20./180*3.14, 50./180*3.14, 0./180*3.14, 110./180*3.14, 20./180*3.14};
     arm.setJointValueTarget(joint_group_positions2);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
@@ -117,12 +117,13 @@ int main(int argc, char **argv) {
     my_control_msg3.ready2next = true;
     Leader_control.publish(my_control_msg3);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
-    std::vector<double> joint_group_positions3 = {0./180*3.14, 0./180*3.14, 90./180*3.14, 0./180*3.14, 90./180*3.14, 0./180*3.14};
+    std::vector<double> joint_group_positions3 = {0./180*3.14, 0./180*3.14, 90./180*3.14, 0./180*3.14, 90./180*3.14, 40./180*3.14};
     arm.setJointValueTarget(joint_group_positions3);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
     ROS_INFO("Move  group # 3 complete !!!!!");
 //    sleep(1);
+usleep(500000);
 
 
 
@@ -136,12 +137,12 @@ int main(int argc, char **argv) {
     my_control_msg4.ready2next = true;
     Leader_control.publish(my_control_msg4);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
-    std::vector<double> joint_group_positions4 = {42./180*3.14, 33./180*3.14, -22./180*3.14, 70./180*3.14, 145./180*3.14, 4./180*3.14};
+    std::vector<double> joint_group_positions4 = {42./180*3.14, 33./180*3.14, -22./180*3.14, 70./180*3.14, 145./180*3.14, 20./180*3.14};
     arm.setJointValueTarget(joint_group_positions4);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
     ROS_INFO("Move  group # %d complete !!!!!", group);
-//    sleep(1);
+//sleep(1);
 
 
     // --------------------------------------------------------------------------------------------------
@@ -152,12 +153,12 @@ int main(int argc, char **argv) {
     my_control_msg5.ready2next = true;
     Leader_control.publish(my_control_msg5);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
-    std::vector<double> joint_group_positions5 = {46./180*3.14, -79./180*3.14, 48./180*3.14, -27./180*3.14, 98./180*3.14, 99./180*3.14};
+    std::vector<double> joint_group_positions5 = {46./180*3.14, -72./180*3.14, 48./180*3.14, -27./180*3.14, 98./180*3.14, 50./180*3.14};
     arm.setJointValueTarget(joint_group_positions5);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
     ROS_INFO("Move  group # %d complete !!!!!", group);
-//    sleep(1);
+
 
     // --------------------------------------------------------------------------------------------------
     // dance group :#6 ---- wave arm !
@@ -167,12 +168,12 @@ int main(int argc, char **argv) {
     my_control_msg6.ready2next = true;
     Leader_control.publish(my_control_msg6);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
-    std::vector<double> joint_group_positions6 = {45./180*3.14, -79./180*3.14, 101./180*3.14, -67./180*3.14, 27./180*3.14, 216./180*3.14};
+    std::vector<double> joint_group_positions6 = {45./180*3.14, -72./180*3.14, 101./180*3.14, -67./180*3.14, 27./180*3.14, 80./180*3.14};
     arm.setJointValueTarget(joint_group_positions6);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
     ROS_INFO("Move  group # %d complete !!!!!", group);
-//    sleep(1);
+
 
     // --------------------------------------------------------------------------------------------------
     // dance group :#7 ---- wave arm!
@@ -182,7 +183,7 @@ int main(int argc, char **argv) {
     my_control_msg7.ready2next = true;
     Leader_control.publish(my_control_msg7);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
-    std::vector<double> joint_group_positions7 = {23./180*3.14, -44./180*3.14, 21./180*3.14, -127./180*3.14, 65./180*3.14, -47./180*3.14};
+    std::vector<double> joint_group_positions7 = {23./180*3.14, -44./180*3.14, 21./180*3.14, -127./180*3.14, 65./180*3.14, 30./180*3.14};
     arm.setJointValueTarget(joint_group_positions7);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
@@ -198,12 +199,12 @@ int main(int argc, char **argv) {
     my_control_msg8.ready2next = true;
     Leader_control.publish(my_control_msg8);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
-    std::vector<double> joint_group_positions8 = {0./180*3.14, -29./180*3.14, 29./180*3.14, -90./180*3.14, 90./180*3.14, -213./180*3.14};
+    std::vector<double> joint_group_positions8 = {0./180*3.14, -29./180*3.14, 29./180*3.14, -90./180*3.14, 90./180*3.14, -150./180*3.14};
     arm.setJointValueTarget(joint_group_positions8);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
     ROS_INFO("Move  group # %d complete !!!!!", group);
-//    sleep(1);
+    sleep(1);
 
 
 
@@ -317,7 +318,7 @@ int main(int argc, char **argv) {
     my_control_msg12.ready2next = true;
     Leader_control.publish(my_control_msg12);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
-    std::vector<double> joint_group_positions12 = {-60./180*3.14, -35./180*3.14, -10./180*3.14, -65./180*3.14, 160./180*3.14, 10./180*3.14};
+    std::vector<double> joint_group_positions12 = {-60./180*3.14, -35./180*3.14, -10./180*3.14, -65./180*3.14, 160./180*3.14, 0./180*3.14};
     arm.setJointValueTarget(joint_group_positions12);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
@@ -383,9 +384,41 @@ int main(int argc, char **argv) {
     arm.setJointValueTarget(joint_group_positions16);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
+    ROS_INFO("Move  group # %d complete !!!!! #1", group);
+    std::vector<double> joint_group_positions16_1 = {-60./180*3.14, 20./180*3.14, 10./180*3.14, -100./180*3.14, 150./180*3.14, -90./180*3.14};
+    arm.setJointValueTarget(joint_group_positions16_1);
+    arm.plan(my_plan_leader);
+    arm.execute(my_plan_leader);
+
+
+
+    group = 17;
+    probot_g602_demo::leader_control my_control_msg17;
+    my_control_msg17.dance_group_number = group;
+    my_control_msg17.ready2next = true;
+    Leader_control.publish(my_control_msg17);
+    ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
+    ROS_INFO("Move  group # %d complete !!!!! #2", group);
+    std::vector<double> joint_group_positions16_2 = {-60./180*3.14, -35./180*3.14, -10./180*3.14, -65./180*3.14, 160./180*3.14, 10./180*3.14};
+    arm.setJointValueTarget(joint_group_positions16_2);
+    arm.plan(my_plan_leader);
+    arm.execute(my_plan_leader);
+    ROS_INFO("Move  group # %d complete !!!!! #3", group);
+    std::vector<double> joint_group_positions16_3 = {60./180*3.14, -35./180*3.14, -10./180*3.14, 65./180*3.14, 160./180*3.14, 10./180*3.14};
+    arm.setJointValueTarget(joint_group_positions16_3);
+    arm.plan(my_plan_leader);
+    arm.execute(my_plan_leader);
+    ROS_INFO("Move  group # %d complete !!!!! #4", group);
+    arm.setJointValueTarget(joint_group_positions16);
+    arm.plan(my_plan_leader);
+    arm.execute(my_plan_leader);
     ROS_INFO("Move  group # %d complete !!!!!", group);
+sleep(1);
+    //todo :change group16 to 2 group and increase one msg pub, so it can move together
+
 
     // dance group :#17 ---- twist - twist
+   /*
     arm.setMaxAccelerationScalingFactor(0.8);
     arm.setMaxVelocityScalingFactor(0.8);
     group = 17;
@@ -394,12 +427,12 @@ int main(int argc, char **argv) {
     my_control_msg17.ready2next = true;
     Leader_control.publish(my_control_msg17);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
-    std::vector<double> joint_group_positions17 = {0./180*3.14, 40./180*3.14, -10./180*3.14, 0./180*3.14, 55./180*3.14, 0./180*3.14};
+    std::vector<double> joint_group_positions17 = {0./180*3.14, 40./180*3.14, -10./180*3.14, 0./180*3.14, 55./180*3.14, 50./180*3.14};
     arm.setJointValueTarget(joint_group_positions17);
     arm.plan(my_plan_leader);
     arm.execute(my_plan_leader);
     ROS_INFO("Move  group # %d complete !!!!!", group);
-
+*/
     // dance group :#18 ---- twist - twist
     arm.setMaxAccelerationScalingFactor(0.8);
     arm.setMaxVelocityScalingFactor(0.8);
@@ -410,25 +443,25 @@ int main(int argc, char **argv) {
     Leader_control.publish(my_control_msg18);
     ROS_INFO("Move  group # %d now !!!!! leader call the follower!!!!!!", group);
     for (int i = 0; i < 1; ++i) {
-        std::vector<double> joint_group_positions18 = {30./180*3.14, 30./180*3.14, -6./180*3.14, -80./180*3.14, 15./180*3.14, 60./180*3.14};
-        arm.setJointValueTarget(joint_group_positions18);
-        arm.plan(my_plan_leader);
-        arm.execute(my_plan_leader);
-        std::vector<double> joint_group_positions18_1 = {0./180*3.14, 38./180*3.14, -6./180*3.14, 0./180*3.14, 50./180*3.14, 0./180*3.14};
-        arm.setJointValueTarget(joint_group_positions18_1);
-        arm.plan(my_plan_leader);
-        arm.execute(my_plan_leader);
-        arm.setJointValueTarget(joint_group_positions18);
-        arm.plan(my_plan_leader);
-        arm.execute(my_plan_leader);
+//        std::vector<double> joint_group_positions18 = {30./180*3.14, 30./180*3.14, -6./180*3.14, -80./180*3.14, 15./180*3.14, 60./180*3.14};
+//        arm.setJointValueTarget(joint_group_positions18);
+//        arm.plan(my_plan_leader);
+//        arm.execute(my_plan_leader);
+//        std::vector<double> joint_group_positions18_1 = {0./180*3.14, 38./180*3.14, -6./180*3.14, 0./180*3.14, 50./180*3.14, 0./180*3.14};
+//        arm.setJointValueTarget(joint_group_positions18_1);
+//        arm.plan(my_plan_leader);
+//        arm.execute(my_plan_leader);
+//        arm.setJointValueTarget(joint_group_positions18);
+//        arm.plan(my_plan_leader);
+//        arm.execute(my_plan_leader);
 
         std::vector<double> joint_group_positions18_2 = {-35./180*3.14, 25./180*3.14, -3./180*3.14, 80./180*3.14, 7./180*3.14, -60./180*3.14};
-        arm.setJointValueTarget(joint_group_positions18_2);
-        arm.plan(my_plan_leader);
-        arm.execute(my_plan_leader);
-        arm.setJointValueTarget(joint_group_positions18_1);
-        arm.plan(my_plan_leader);
-        arm.execute(my_plan_leader);
+//        arm.setJointValueTarget(joint_group_positions18_2);
+//        arm.plan(my_plan_leader);
+//        arm.execute(my_plan_leader);
+//        arm.setJointValueTarget(joint_group_positions18_1);
+//        arm.plan(my_plan_leader);
+//        arm.execute(my_plan_leader);
         arm.setJointValueTarget(joint_group_positions18_2);
         arm.plan(my_plan_leader);
         arm.execute(my_plan_leader);
@@ -537,6 +570,10 @@ int main(int argc, char **argv) {
 //    arm.plan(my_plan_leader);
 //    arm.execute(my_plan_leader);
 //    ROS_INFO("Move  group # %d complete !!!!!", group);
-
+    arm.setNamedTarget("home");
+    arm.plan(my_plan_leader);
+    arm.execute(my_plan_leader);
+    Leader_control.publish(my_control_msg0);
+    sleep(3);
     return 0;
 }
